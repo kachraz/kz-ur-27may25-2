@@ -16,7 +16,7 @@ load_dotenv("src/.env")
 hf_token = os.getenv("HF")
 
 # Main Repo ID here
-REPO_ID = "Chooth/vrs1"
+REPO_ID = "Chooth/vrs2"
 
 
 
@@ -32,9 +32,9 @@ def hf_space_ops():
     """
     Main function for Hugging Face repository operations.
     """
-    hf_delete_spaces()
-    # hf_create_space()
-    # hf_upload_dirz()
+    # hf_delete_spaces()
+    hf_create_space()
+    hf_upload_dirz()
 
 
 # --- Function for creating a repo ---
@@ -112,7 +112,7 @@ def hf_upload_dirz():
     """
 
     # Folder to upload
-    local_folder_path = "../../WO/TEZT/sh2/"  # Path to your local folder
+    local_folder_path = "../WO/TEZT/sha3/"  # Path to your local folder
     path_in_repo = ""  # Upload to repo root (change to subdir like "folder/" if needed)
 
     # Upload the folder
@@ -128,7 +128,10 @@ def hf_upload_dirz():
             "*.pyc",
             ".env",
             ".env/*",
-            "node_modules/"
+            "node_modules/",
+            ".gitignore", 
+            "eslint*",
+            ".vercel/",
         ],  # Ignore these patterns
         repo_type="space",  # Change to "dataset" or "space" if needed
         commit_message="SmellPantySpace",
