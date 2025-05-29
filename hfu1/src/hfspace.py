@@ -8,7 +8,6 @@ from huggingface_hub import (
     delete_repo,
     upload_folder,
 )
-
 from src.utz import header1, header2
 
 # Loading the env file
@@ -32,7 +31,7 @@ def hf_space_ops():
     """
     Main function for Hugging Face repository operations.
     """
-    # hf_delete_spaces()
+    hf_delete_spaces()
     hf_create_space()
     hf_upload_dirz()
 
@@ -171,7 +170,7 @@ def hf_delete_spaces():
 
     # Config
     repo_ids = [
-        "Chooth/rvjspnpm1",
+        "Chooth/vrs2",
     ]
     repo_type = "space"
     token = hf_token
