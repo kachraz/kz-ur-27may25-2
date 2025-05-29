@@ -1,4 +1,4 @@
-<img src="./kz/1.mp4" align="center" width="3000">
+<img src="./kz/2.gif" align="center" width="3000">
 
 1. [kz-ur-27may25-2](#kz-ur-27may25-2)
 2. [ButyStinx](#butystinx)
